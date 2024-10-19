@@ -1,0 +1,39 @@
+.tracking-reserve{
+    .input{
+        height: 40px;
+        width: 50%;
+    }
+
+    &__table{
+        th,td,table{
+            border: 1px solid $light-gray-color ;
+           
+        }
+        td,th{
+            @extend .p-15;
+        }
+        th,tr:first-child{
+            @extend .text-center;
+
+        }
+        table{
+            border-collapse: separate;
+            border-spacing: 1px;
+            width: 100%;
+            tr{
+                height: 30px;
+                text-align: right;
+                transition: 400ms;
+               
+                &:hover{
+                    background: #e8e8ff;
+                }
+            }
+          
+            // tr:nth-child(even)
+            // {
+            //     td {  }
+            // }   
+        }
+    }
+}
